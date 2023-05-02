@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+
+#header {
+    background-color: #000;
+    padding: 10px 24px;
+    display: flex;
+    justify-content: space-between;
+
+    .header-logo {
+        width: 115px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .right-action {
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        a {
+            color: #fff;
+            font-weight: 300;
+        }
+
+        .action {
+            padding: 5px;
+            display: flex;
+            justify-self: center;
+        }
+    }
+}
+
+#menu-top {
+    padding: 24px;
+
+    ul {
+        list-style: none;
+        font-size: 0;
+
+        li {
+            font-size: 18px;
+            display: inline-block;
+
+            a {
+                color: #000;
+                font-weight: 300;
+                padding: 7px 22px;
+                text-decoration: none;
+                transition: all .2s;
+                position: relative;
+
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    height: 0;
+                    width: 0;
+                    border: 1px solid #000;
+                    transition: all .2s;
+                    opacity: 0;
+                }
+
+                &:hover,
+                &.active {
+                    font-weight: 500;
+
+                    &:after {
+                        width: 75%;
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.menu-footer {
+    &-1 {
+        background-color: #fafafa;
+    }
+
+    &-2 {
+        background-color: #ececec;
+    }
+
+    .list-menu {
+        display: flex;
+        padding: 30px 0;
+
+        .menu {
+            width: 33.33%;
+            padding: 0 15px;
+
+            h5 {
+                font-weight: 700;
+                margin-bottom: 0;
+                padding-bottom: 0.75rem;
+            }
+
+            .menu-link {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    color: #000;
+                    font-weight: 400;
+                    text-decoration: none;
+                }
+
+                p {
+                    margin-bottom: 0.25rem;
+                }
+            }
+
+            &:not(:last-child) {
+                border-right: 2px solid #ebebeb;
+            }
+
+            .highlight {
+                color: #dd8884 !important;
+            }
+        }
+    }
+}

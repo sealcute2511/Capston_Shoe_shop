@@ -1,0 +1,47 @@
+#content-register {
+    .title-form {
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .input-custom {
+        position: relative;
+
+        input {
+            border: none;
+            border-bottom: 3px solid #ae18e2;
+            border-radius: 0;
+            padding-right: 30px;
+            position: relative;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        &-required::after {
+            content: '(*)';
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+            color: red;
+        }
+    }
+
+    input[type="radio"] {
+        accent-color: #ae18e2;
+    }
+
+    .btn-submit {
+        color: #fff;
+        background-color: #AE18E2;
+        padding: 7px 50px;
+    }
+
+    .error {
+        font-size: 14px;
+        color: red;
+        font-style: italic;
+    }
+}

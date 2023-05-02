@@ -1,0 +1,38 @@
+#content-register .title-form {
+  text-align: center;
+  font-weight: 600;
+}
+#content-register .input-custom {
+  position: relative;
+}
+#content-register .input-custom input {
+  border: none;
+  border-bottom: 3px solid #ae18e2;
+  border-radius: 0;
+  padding-right: 30px;
+  position: relative;
+}
+#content-register .input-custom input:focus {
+  box-shadow: none;
+}
+#content-register .input-custom-required::after {
+  content: "(*)";
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  color: red;
+}
+#content-register input[type=radio] {
+  accent-color: #ae18e2;
+}
+#content-register .btn-submit {
+  color: #fff;
+  background-color: #AE18E2;
+  padding: 7px 50px;
+}
+#content-register .error {
+  font-size: 14px;
+  color: red;
+  font-style: italic;
+}/*# sourceMappingURL=register.css.map */

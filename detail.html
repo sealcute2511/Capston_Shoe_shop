@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SyberSoft</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="/images/sybersoft_icon.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/detail.css">
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="header-logo">
+            <img src="/images/head_logo.png" alt="Head Logo">
+        </div>
+        <div class="right-action">
+            <div class="action action-cart">
+                <span class="material-icons-outlined">shopping_cart</span>
+            </div>
+            <div class="action action-login">
+                <a href="">Login</a>
+            </div>
+            <div class="action action-register">
+                <a href="">Register</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="menu-top">
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="">Men</a>
+            </li>
+            <li>
+                <a href="">Woman</a>
+            </li>
+            <li>
+                <a href="">Kid</a>
+            </li>
+            <li>
+                <a href="">Sport</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="content-product">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5">
+                    <div class="box-left box-image-preview">
+                        <img src="https://t4.ftcdn.net/jpg/04/99/93/31/360_F_499933117_ZAUBfv3P1HEOsZDrnkbNCt4jc3AodArl.jpg"
+                            alt="Preview">
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="box-right box-product-info">
+                        <div class="title">
+                            <h4>{{ Product name }}</h4>
+                        </div>
+                        <div class="description">
+                            <p>{{ Product Description }}</p>
+                        </div>
+                        <div class="size">
+                            <h5>Available size</h5>
+                            <ul class="list-size"></ul>
+                        </div>
+                        <div class="price">
+                            <p>{{ Product price }}</p>
+                        </div>
+                        <div class="add-to-cart">
+                            <div class="quantity-select">
+                                <button class="btn btn-primary btn-quantity btn-quantity-minus">
+                                    <span class="material-icons-outlined">remove</span>
+                                </button>
+                                <input class="input-quantity" readonly name="quantity" type="number" value="1" min="1">
+                                <button class="btn btn-primary btn-quantity btn-quantity-plus">
+                                    <span class="material-icons-outlined">add</span>
+                                </button>
+                            </div>
+                            <div class="button-add-cart">
+                                <button class="btn btn-add-to-cart">
+                                    Add to cart
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="relation-product">
+        <div class="container">
+            <h3 class="title">-Realate Product -</h3>
+            <div class="area-relation-product"></div>
+        </div>
+    </div>
+
+    <div class="menu-footer menu-footer-1">
+        <div class="container">
+            <div class="list-menu">
+                <div class="menu menu-1">
+                    <h5 class="text-uppercase">Get Help</h5>
+                    <div class="menu-link">
+                        <a href="">Contact Us</a>
+                        <a href="">Shopping</a>
+                        <a href="">NIKEiD</a>
+                        <a href="">Nike+</a>
+                    </div>
+                </div>
+                <div class="menu menu-2">
+                    <h5 class="text-uppercase">Orders</h5>
+                    <div class="menu-link">
+                        <a href="">Payment Options</a>
+                        <a href="">Shipping and delivery</a>
+                        <a href="">Returns</a>
+                    </div>
+                </div>
+                <div class="menu menu-3">
+                    <h5 class="text-uppercase">Register</h5>
+                    <div class="menu-link">
+                        <p>Create one account to manage everything you do with Nike, form your shopping preferences to
+                            you Nike+ activitiy</p>
+                        <a href="" class="highlight">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="menu-footer menu-footer-2">
+        <div class="container">
+            <div class="list-menu">
+                <div class="menu menu-1">
+                    <h5 class="text-uppercase">Email Sign Up</h5>
+                    <div class="menu-link">
+                        <p>Be the first to know about new products an special offers</p>
+                        <a href="" class="highlight">Sign up now</a>
+                    </div>
+                </div>
+                <div class="menu menu-2">
+                    <h5 class="text-uppercase">Gift cards</h5>
+                    <div class="menu-link">
+                        <p>Give the gift that aways fits</p>
+                        <a href="" class="highlight">View cards</a>
+                    </div>
+                </div>
+                <div class="menu menu-3">
+                    <h5 class="text-uppercase">Stores near you</h5>
+                    <div class="menu-link">
+                        <p>Locate a Nike retail store of authorized retailer</p>
+                        <a href="" class="highlight">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/common.js"></script>
+    <script src="/js/product.js"></script>
+    <script src="/js/detail.js"></script>
+</body>
+
+</html>
